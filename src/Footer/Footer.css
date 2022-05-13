@@ -1,0 +1,11 @@
+.footer{
+    font-size: 20px;
+    font-weight: bold;
+    background: yellowgreen;
+    text-align: center;
+    font-family: ui-sans-serif;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}

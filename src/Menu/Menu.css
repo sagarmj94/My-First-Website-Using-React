@@ -1,0 +1,11 @@
+.menu{
+    background: lightgreen;
+    text-align: right;
+    line-height: 30px;
+}
+.menu-items > a{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+}

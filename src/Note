@@ -1,0 +1,181 @@
+Routing:
+ Routing allows an user to render one page from another.
+- To use routing, a library needs to be installed in node_modules.
+  react-router-dom library.
+- Routers in React Application:
+----------------------------------
+1. HashRouter
+2. BrowserRouter
+
+Managing dynamic Lists in React
+==================================
+var techstack=['Mongo DB','MySQL','Express JS','Next JS','React JS','Angular13','Node JS'];
+
+Drop down
+===========
+<select>
+   <option>Mongo DB</option>
+   <option>MySQL</option>
+   <option>Express JS</option>
+</select>
+
+<select>
+  {
+      techstack.map((value,index)=>{
+              return <option>{value}</option>
+      })
+  }
+</select>
+
+Ordered Lists
+================
+var techstack=['Mongo DB','MySQL','Express JS','Next JS','React JS','Angular13','Node JS'];
+<ol>
+  {
+    techstack.map((value,index)=>{
+           return <li>{value}</li>;
+    }); 
+  }
+</ol>
+
+
+que: 'What is a dynamic array?'
+opt1: 'A variable size data structure'
+opt2: 'An array which is created at runtime'
+opt3: 'The memory to the array is allocated at runtime'
+opt4: 'An array which is reallocated everytime whenever new elements have to be added'
+
+que: 'What is meant by physical size in a dynamic array?'
+opt1: 'The size allocated to elements'
+opt2: 'The size extended to add new elements'
+opt3: 'The size of the underlying array at the back-end'
+opt4: 'The size visible to users'
+
+
+que: 'The number of items used by the dynamic array contents is its'
+opt1: 'Physical size'
+opt2: 'Capacity'
+opt3: 'Logical size'
+opt4: 'Random size'
+
+que: 'How will you implement dynamic arrays in Java?'
+opt1: 'Set'
+opt2: 'Map'
+opt3: 'HashMap'
+opt4: 'List'
+
+que: 'Which of the following is a disadvantage of dynamic arrays?'
+opt1: 'Locality of reference'
+opt2: 'Data cache utilization'
+opt3: 'Random access'
+opt4: 'Memory leak'
+
+questionares=[{
+                que: 'What is a dynamic array?'
+                opt1: 'A variable size data structure'
+                opt2: 'An array which is created at runtime'
+                opt3: 'The memory to the array is allocated at runtime'
+                opt4: 'An array which is reallocated everytime whenever new elements have to be added'
+                },
+              {
+                que: 'What is meant by physical size in a dynamic array?'
+                opt1: 'The size allocated to elements'
+                opt2: 'The size extended to add new elements'
+                opt3: 'The size of the underlying array at the back-end'
+                opt4: 'The size visible to users'
+              },
+              {
+                que: 'The number of items used by the dynamic array contents is its'
+                opt1: 'Physical size'
+                opt2: 'Capacity'
+                opt3: 'Logical size'
+                opt4: 'Random size'
+              },
+              {
+                que: 'How will you implement dynamic arrays in Java?'
+                opt1: 'Set'
+                opt2: 'Map'
+                opt3: 'HashMap'
+                opt4: 'List'
+              },
+              {
+                que: 'Which of the following is a disadvantage of dynamic arrays?'
+                opt1: 'Locality of reference'
+                opt2: 'Data cache utilization'
+                opt3: 'Random access'
+                opt4: 'Memory leak'
+              }];
+
+Higher Order Component
+=======================
+
+Comp1 (a+b+c)/3*6          addnos
+
+Comp2 (a+b+c)(2a+2b+4ab)   addnos
+
+Comp3 l*h(side1+side2+side3)-4ah addnos
+
+Comp4 2(x+y+z)/4xy          addnos
+
+...
+
+HOF(Higher Order Function): When a function is passed as an argument to another function, then the function which
+accepts another function as argument is called HOF.
+
+function f1(f2){
+  //TODO
+}
+//f1 is HOF here
+
+HOC: A component when passed as an argument, then the component which wraps the passsed component and returns
+a new component is called HOC.
+
+const MyNewComp=higherOrderCompFun(MyComp);
+
+Life Cycle Methods
+=====================
+4. Exception handling
+       . static getDerivedStateFromError
+       . componentDidCatch
+
+try-catch-finally-throw
+=========================
+function writeToFile(text){
+   openFileInWriteMode();
+   try{
+     writeData(text); //throws exception
+   }catch(e){
+     handleTheError(e);
+   }finally{
+     closeFileFromWriteMode();
+   }
+
+}
+
+throw Exception
+
+4. Exception handling
+       . static getDerivedStateFromError
+       . componentDidCatch
+
+ExHandle:
+      <TechnologyExInterceptor>
+          <Technology/>
+      </TechnologyExInterceptor>
+Home: 
+      <TechnologyExInterceptor>
+          <Technology/>
+      </TechnologyExInterceptor>
+About: 
+      <TechnologyExInterceptor>
+          <Technology/>
+      </TechnologyExInterceptor>
+Hoc: 
+      <TechnologyExInterceptor>
+          <Technology/>
+      </TechnologyExInterceptor>
+
+TechnologyExInterceptor:getDerivedStateFromError
+<TechnologyExInterceptor>
+    <Technology/>
+</TechnologyExInterceptor>
